@@ -1,0 +1,36 @@
+<html>
+ <body bgcolor="">
+ <div>
+<h1 style="color:#094980"> <bold><center>Artificial Inteligence ChatBot using Python - Rasa X </center><bold></h1>
+ </div>
+ <div id="webchat">
+        <script src="https://storage.googleapis.com/mrbot-cdn/webchat-latest.js"></script>
+        <script>
+            WebChat.default.init({
+                selector: "#webchat",
+                initPayload: '/greet',
+                interval: 1000, // 1000 ms between each message
+                //customData: { "sender": "django" }, // arbitrary custom data. Stay minimal as this will be added to the socket
+                socketUrl: "http://localhost:5005",
+                title: "Diya",
+                subtitle: "ask to Diya....",
+               // profileAvatar: "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight&accessoriesType=Blank&hairColor=Black&facialHairType=Blank&clotheType=Overall&clotheColor=White&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Pale",
+				profileAvatar: "diya1.png",
+				openLauncherImage: "diya1.png",
+				showCloseButton: true,
+                fullScreenMode: false,
+                hideWhenNotConnected: false,
+				params: {
+                          images: {
+                            dims: {
+                              width: 700,
+                              height: 500,
+                            }
+                          },
+                          storage: "session"
+                        }
+            })
+        </script>
+    </div
+</body>
+</html>
